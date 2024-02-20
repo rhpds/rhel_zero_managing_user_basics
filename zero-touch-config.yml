@@ -19,3 +19,10 @@ tabs:
   - name: terminal
     port: 443
     path: /tty1
+    user: root
+    host: rhel
+  - name: terminal
+    port: 443
+    path: /tty2
+    user: rhel
+    host: rhel
