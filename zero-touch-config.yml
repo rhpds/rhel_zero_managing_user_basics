@@ -16,12 +16,12 @@ antora:
       label: Module 5
 
 tabs:
-  - name: terminal
+  - name: ">_ root"
     port: 443
     path: /tty1
     user: root
     host: rhel
-  - name: terminal
+  - name: ">_ rhel"
     port: 443
     path: /tty2
     user: rhel
