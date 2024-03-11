@@ -5,16 +5,15 @@ antora:
   dir: www
   modules:
     - name: index
-      label: Module 1
+      label: Creating user accounts with useradd
     - name: module-02
-      label: Module 2
+      label: Setting the Account Password
     - name: module-03
-      label: Module 3
+      label: Adding Groups
     - name: module-04
-      label: Module 4
+      label: Removing a user for a group
     - name: module-05
-      label: Module 5
-
+      label: Removing Users
 tabs:
   - name: ">_ root"
     port: 443
