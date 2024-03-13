@@ -20,8 +20,8 @@ tabs:
     path: /tty1
     user: root
     host: rhel
-  - name: ">_ Terminal rhel"
-    port: 443
-    path: /tty2
-    user: rhel
-    host: rhel
+  # - name: ">_ Terminal rhel"
+  #   port: 443
+  #   path: /tty2
+  #   user: rhel
+  #   host: rhel
