@@ -1,4 +1,4 @@
-= Removing a user for a group
+= Removing a user from a group
 
 If you want to remove a user from a group without deleting the group,
 run the following command:
