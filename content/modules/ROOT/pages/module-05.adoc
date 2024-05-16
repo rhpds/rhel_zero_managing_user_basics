@@ -19,11 +19,9 @@ passwd -S guest
 After expiring this account, *root* will still be able to log in.
 However, no other user will be able to access *guest*.
 
-____
-_Note:_ If you prefer, `+chage+` can accomplish this same functionality.
+NOTE: If you prefer, `+chage+` can accomplish this same functionality.
 Run `+chage+` with no arguments to see a summary of the account access
 features this command provides.
-____
 
 == Deleting a user account
 
@@ -57,8 +55,6 @@ Also confirm that the *guest* home directory has been deleted:
 ls /home/guest
 ----
 
-____
-_NOTE:_ If you try to delete a user that still has active processes, you
+NOTE: If you try to delete a user that still has active processes, you
 will get the error displayed below. You must kill this user’s processes
 and try again.
-____

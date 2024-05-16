@@ -8,9 +8,7 @@ run the following command:
 gpasswd -d guest viewers
 ----
 
-____
-_NOTE:_ This change will not take effect until the user logs in again.
-____
+NOTE: This change will not take effect until the user logs in again.
 
 == Deleting a group
 

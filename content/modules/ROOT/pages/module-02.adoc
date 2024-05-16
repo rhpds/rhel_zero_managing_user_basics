@@ -33,11 +33,9 @@ This outputs useful information about when the password was last
 changed, when the password expires, and how long the user will have to
 change their password before it becomes inactive.
 
-____
-_NOTE:_ You can view this same information with the `+passwd+` command
+NOTE: You can view this same information with the `+passwd+` command
 using various options, but `+chage -l+` provides it in a much more
 human-readable and concise format.
-____
 
 You can use the `+passwd+` command for many more actions, such as
 setting an expiration date or locking users from logging in with their
