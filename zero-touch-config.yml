@@ -15,13 +15,13 @@ antora:
     - name: module-05
       label: Removing Users
 tabs:
-  - name: ">_ Terminal root"
+  - name: ">_ root"
     port: 443
     path: /tty1
     user: root
     host: rhel
-  # - name: ">_ Terminal rhel"
-  #   port: 443
-  #   path: /tty2
-  #   user: rhel
-  #   host: rhel
+  - name: ">_ rhel"
+    port: 443
+    path: /tty2
+    user: rhel
+    host: rhel
