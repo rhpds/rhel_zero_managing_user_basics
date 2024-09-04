@@ -3,6 +3,7 @@
 If you want to remove a user from a group without deleting the group,
 run the following command:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 gpasswd -d guest viewers
@@ -15,6 +16,7 @@ NOTE: This change will not take effect until the user logs in again.
 If instead you want to delete the group all together, run the
 `+groupdel+` command as root.
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 groupdel viewers
@@ -26,6 +28,7 @@ that user first.
 Attempting to add a user to this group will print an error message
 showing that it now does not exist.
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 usermod -aG viewers guest

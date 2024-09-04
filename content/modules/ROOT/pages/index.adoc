@@ -2,6 +2,7 @@
 
 Add a new account called *guest* using the `+useradd+` command:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 useradd guest
@@ -9,6 +10,7 @@ useradd guest
 
 Confirm the account creation by examining the *passwd* file.
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 grep -w guest /etc/passwd
