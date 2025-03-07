@@ -9,12 +9,7 @@ use the `+-g+` option to specify a group ID (GID), in this case 10000:
 groupadd -g 10000 viewers
 ----
 
-.Output
-[source,bash]
-----
-[root@rhel ~]# groupadd -g 10000 viewers
-[root@rhel ~]#
-----
+This command has no expected output.
 
 NOTE: Every time a new user is created, there is a primary group that
 is automatically generated for the user. When creating your own group,
