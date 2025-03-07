@@ -9,6 +9,12 @@ run the following command:
 gpasswd -d guest viewers
 ----
 
+.Output
+[source,bash]
+----
+Removing user guest from group viewers
+----
+
 NOTE: This change will not take effect until the user logs in again.
 
 == Deleting a group
@@ -22,6 +28,13 @@ If instead you want to delete the group all together, run the
 groupdel viewers
 ----
 
+.Output
+[source,bash]
+----
+[root@rhel ~]# groupdel viewers
+[root@rhel ~]#
+----
+
 If you are trying to remove the primary group of a user, you must remove
 that user first.
 
@@ -32,4 +45,10 @@ showing that it now does not exist.
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 usermod -aG viewers guest
+----
+
+.Output
+[source,bash]
+----
+usermod: group 'viewers' does not exist
 ----

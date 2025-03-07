@@ -9,6 +9,13 @@ informs the system to stop accepting a user’s login attempts.
 usermod -L guest
 ----
 
+.Output
+[source,bash]
+----
+[root@rhel ~]# usermod -L guest
+[root@rhel ~]#
+----
+
 This operation does not have an output, but calling `+passwd+` with the
 summary option (`+-S+`) allows you to confirm this change.
 
@@ -16,6 +23,12 @@ summary option (`+-S+`) allows you to confirm this change.
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 passwd -S guest
+----
+
+.Output
+[source,bash]
+----
+guest LK 2025-03-07 0 99999 7 -1 (Password locked.)
 ----
 
 After expiring this account, *root* will still be able to log in.
@@ -44,6 +57,13 @@ user account.
 userdel -r guest
 ----
 
+.Output
+[source,bash]
+----
+[root@rhel ~]# userdel -r guest
+[root@rhel ~]#
+----
+
 Try logging in as *guest* to confirm the account deletion:
 
 .Command
@@ -52,12 +72,24 @@ Try logging in as *guest* to confirm the account deletion:
 su - guest
 ----
 
+.Output
+[source,bash]
+----
+su: user guest does not exist or the user entry does not contain all the required fields
+----
+
 Also confirm that the *guest* home directory has been deleted:
 
 .Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 ls /home/guest
+----
+
+.Output
+[source,bash]
+----
+ls: cannot access '/home/guest': No such file or directory
 ----
 
 NOTE: If you attempt to delete a user that still has active processes, you

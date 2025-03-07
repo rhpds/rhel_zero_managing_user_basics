@@ -9,6 +9,13 @@ use the `+-g+` option to specify a group ID (GID), in this case 10000:
 groupadd -g 10000 viewers
 ----
 
+.Output
+[source,bash]
+----
+[root@rhel ~]# groupadd -g 10000 viewers
+[root@rhel ~]#
+----
+
 NOTE: Every time a new user is created, there is a primary group that
 is automatically generated for the user. When creating your own group,
 it is best practice to specify a GID that leaves room for primary groups
@@ -25,6 +32,12 @@ successful:
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 grep -w viewers /etc/group
+----
+
+.Output
+[source,bash]
+----
+viewers:x:10000:
 ----
 
 This file shows the group name, the GID, and which users belong to the
@@ -46,6 +59,13 @@ associated with *guest*.
 usermod -aG viewers guest
 ----
 
+.Output
+[source,bash]
+----
+[root@rhel ~]# usermod -aG viewers guest
+[root@rhel ~]#
+----
+
 The `+groups+` command is useful for validating this change, because it
 lists all groups associated with a user:
 
@@ -53,6 +73,12 @@ lists all groups associated with a user:
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 groups guest
+----
+
+.Output
+[source,bash]
+----
+guest : guest viewers
 ----
 
 The *viewers* group has been added alongside the account’s primary group
