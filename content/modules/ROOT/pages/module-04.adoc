@@ -28,12 +28,7 @@ If instead you want to delete the group all together, run the
 groupdel viewers
 ----
 
-.Output
-[source,bash]
-----
-[root@rhel ~]# groupdel viewers
-[root@rhel ~]#
-----
+This command has no expected output.
 
 If you are trying to remove the primary group of a user, you must remove
 that user first.

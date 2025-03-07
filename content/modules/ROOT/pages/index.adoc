@@ -8,12 +8,7 @@ Add a new account called *guest* using the `+useradd+` command:
 useradd guest
 ----
 
-.Output
-[source,bash]
-----
-[root@rhel ~]# useradd guest
-[root@rhel ~]# 
-----
+This command has no expected output.
 
 Confirm the account creation by examining the *passwd* file.
 

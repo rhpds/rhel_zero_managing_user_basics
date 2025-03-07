@@ -9,15 +9,10 @@ informs the system to stop accepting a user’s login attempts.
 usermod -L guest
 ----
 
-.Output
-[source,bash]
-----
-[root@rhel ~]# usermod -L guest
-[root@rhel ~]#
-----
+This command has no expected output.
 
-This operation does not have an output, but calling `+passwd+` with the
-summary option (`+-S+`) allows you to confirm this change.
+We can confirm the change by calling `+passwd+` with the
+summary option (`+-S+`).
 
 .Command
 [source,bash,subs="+macros,+attributes",role=execute]
@@ -57,12 +52,7 @@ user account.
 userdel -r guest
 ----
 
-.Output
-[source,bash]
-----
-[root@rhel ~]# userdel -r guest
-[root@rhel ~]#
-----
+This command has no expected output.
 
 Try logging in as *guest* to confirm the account deletion:
 

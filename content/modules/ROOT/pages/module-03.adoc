@@ -59,12 +59,7 @@ associated with *guest*.
 usermod -aG viewers guest
 ----
 
-.Output
-[source,bash]
-----
-[root@rhel ~]# usermod -aG viewers guest
-[root@rhel ~]#
-----
+This command has no expected output.
 
 The `+groups+` command is useful for validating this change, because it
 lists all groups associated with a user:
